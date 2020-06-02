@@ -10,7 +10,7 @@
       <a-entity
         camera
         look-controls
-        wasd-controls="acceleration: 30"
+        wasd-controls="acceleration: 35"
         position="0 1.6 0"
         twoway-motion="speed: 35"
       ></a-entity>
@@ -79,9 +79,6 @@
 
         <a-asset-item id="cloud-obj" src="assets/cloud.obj"></a-asset-item>
         <a-asset-item id="cloud-mtl" src="assets/cloud.mtl"></a-asset-item>
-
-        <a-asset-item id="bigbush-obj" src="assets/bigbush.obj"></a-asset-item>
-        <a-asset-item id="bigbush-mtl" src="assets/bigbush.mtl"></a-asset-item>
 
         <a-asset-item
           id="sparrow2-obj"
@@ -249,11 +246,11 @@
       ></a-obj-model>
 
       <a-entity
-        gltf-model="assets/moon.glb"
+        gltf-model="#moon"
         scale="0.03 0.03 0.03"
         visible=""
-        rotation="0 150 0"
-        position="20.224 6.60737 -2.00131"
+        rotation="-59.99999999999999 150 0"
+        position="18.989 8.53906 -1.55536"
       ></a-entity>
 
       <!-- TEXT -->
@@ -623,12 +620,12 @@ i dag?"
       ></a-obj-model>
 
       <a-obj-model
-        src="#bigbush-obj"
-        mtl="#bigbush-mtl"
-        material=""
+        src="#bush-obj"
+        mtl="#bush-mtl"
         obj-model=""
-        scale="1.4 1.4 1.4"
-        position="-11.991 1.13045 -3.09635"
+        material=""
+        position="-12.077 0.6341 -2.87912"
+        scale="10 10 10"
       ></a-obj-model>
 
       <a-obj-model
@@ -656,7 +653,7 @@ i dag?"
       ></a-obj-model>
 
       <a-entity
-        gltf-model="assets/sun.glb"
+        gltf-model="#sun"
         scale="0.005 0.005 0.005"
         rotation="119.99999999999999 40 0"
         position="-14.788 5.78942 -2.34318"
