@@ -11,7 +11,7 @@
         camera
         look-controls
         wasd-controls="acceleration: 35"
-        position="0 1.6 0"
+        position="1.5 1.6 3.5"
         twoway-motion="speed: 35"
       ></a-entity>
 
@@ -126,10 +126,20 @@
 
       <a-plane
         color="grey"
-        position="0 1.5 -5.75"
+        static-body=""
+        position="2.5 1.5 -5.75194"
         material="side: double"
         geometry="height: 3"
-        scale="7.5 1 1"
+        scale="2.55 1 1"
+      ></a-plane>
+
+      <a-plane
+        color="grey"
+        static-body=""
+        position="-2.489 1.5 -5.74276"
+        material="side: double"
+        geometry="height: 3"
+        scale="2.55 1 1"
       ></a-plane>
 
       <a-plane
@@ -169,6 +179,16 @@
         scale="7.7 11.6 0.1"
         rotation="90 0 0"
       ></a-box>
+
+      <!--CYLINDER-->
+
+      <a-cylinder
+        position="0 1.5 0"
+        material="color: grey"
+        geometry="height: 2"
+        scale="1.5 1.5 1.5"
+        height="2"
+      ></a-cylinder>
 
       <!-- VENUE 1-->
 
@@ -249,14 +269,15 @@
         gltf-model="#moon"
         scale="0.03 0.03 0.03"
         visible=""
-        rotation="-59.99999999999999 150 0"
-        position="18.989 8.53906 -1.55536"
+        rotation="-90 200 0"
+        position="17.729 8.53906 -0.79743"
       ></a-entity>
 
       <!-- TEXT -->
       <a-text
         color="white"
         value="Industribyen
+
         -Sigbjoern Walseth"
         align="center"
         text="side: double"
@@ -655,7 +676,7 @@ i dag?"
       <a-entity
         gltf-model="#sun"
         scale="0.005 0.005 0.005"
-        rotation="119.99999999999999 40 0"
+        rotation="119.99999999999999 -20 0"
         position="-14.788 5.78942 -2.34318"
       ></a-entity>
 
@@ -670,13 +691,14 @@ i dag?"
       <!--TEXT-->
       <a-text
         value="Staa opp
+
         - Per Olav Kaldestad"
         position="-3.644 1.77605 3.44313"
         color="white"
         align="center"
         text="side: double"
         rotation="0 90 0"
-        scale="1.2 1.2 1.2"
+        scale="1 1 1"
       >
       </a-text>
 
@@ -687,7 +709,7 @@ i dag?"
         align="center"
         text="side: double"
         rotation="0 180 0"
-        scale="1.2 1.2 1.2"
+        scale="1.5 1.5 1.5"
       >
       </a-text>
       <a-text
@@ -697,7 +719,7 @@ i dag?"
         align="center"
         text="side: double"
         rotation="0 90 0"
-        scale="1.2 1.2 1.2"
+        scale="1.5 1.5 1.5"
       >
       </a-text>
       <a-text
@@ -707,9 +729,215 @@ i dag?"
         align="center"
         text="side: double"
         rotation="0 90 0"
-        scale="1.2 1.2 1.2"
+        scale="1.7 1.7 1.7"
       >
       </a-text>
+
+      <!--END VENUE 2-->
+
+      <!--VENUE 3-->
+
+      <!--WALLS-->
+
+      <a-box
+        color="white"
+        position="-1.265 1.5 -6.74439"
+        material=""
+        geometry="height: 3"
+        scale="2 1 0.1"
+        rotation="0 90 0"
+      ></a-box>
+
+      <a-box
+        color="white"
+        position="1.275 1.5 -6.75637"
+        material=""
+        geometry="height: 3"
+        scale="2 1 0.1"
+        rotation="0 90 0"
+      ></a-box>
+
+      <a-box
+        color="white"
+        position="2.222 2 -7.79413"
+        material=""
+        geometry="height: 4"
+        scale="2 1 0.1"
+        rotation=""
+      ></a-box>
+
+      <a-box
+        color="white"
+        position="-2.213 2 -7.79413"
+        material=""
+        geometry="height: 4"
+        scale="2 1 0.1"
+        rotation=""
+      ></a-box>
+
+      <a-box
+        color="white"
+        position="-3.267 2 -9.74435"
+        material=""
+        geometry="height: 4"
+        scale="4 1 0.1"
+        rotation="0 90 0"
+      ></a-box>
+
+      <a-box
+        color="white"
+        position="3.191 2 -9.74435"
+        material=""
+        geometry="height: 4"
+        scale="4 1 0.1"
+        rotation="0 90 0"
+      ></a-box>
+
+      <a-box
+        color="white"
+        position="-0.036 2 -11.79544"
+        material=""
+        geometry="height: 4"
+        scale="6.55 1 0.1"
+        rotation=""
+      ></a-box>
+
+      <a-box
+        color="grey"
+        position="-0.004 3.49983 -7.78619"
+        material="color: white"
+        geometry=""
+        scale="2.5 1 0.1"
+      ></a-box>
+
+      <a-box
+        color="white"
+        position="-3.267 1.5 -9.74435"
+        material=""
+        geometry="height: 3"
+        scale="4 1 0.1"
+        rotation="0 90 0"
+      ></a-box>
+
+      <!--TEXT-->
+
+      <a-text
+        value="MATTEO
+
+      - Scout Turkel"
+        position="-2.905 1.8 -5.73381"
+        color="black"
+        align="left"
+        text="color: white; side: double"
+        rotation=""
+        scale=""
+      >
+      </a-text>
+
+      <a-text
+        value="Death is an extensive farm.
+      I spent my morning between chicken coop and far fence
+      picking the dirt from my throat.
+      They didn’t clean you up before letting you go.
+      I think fond thoughts of you anyways,"
+        position="-3.145 1.84707 -8.87598"
+        color="black"
+        align="left"
+        text="side: double"
+        rotation="0 90 0"
+        scale="0.5 0.5 0.5"
+      >
+      </a-text>
+
+      <a-text
+        value="silver knuckle fist fight behind the public pool
+      No more street corners here
+      or hammocks to kiss on."
+        position="-1.067 1.87 -11.67163"
+        color="black"
+        align="left"
+        text="side: double"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      >
+      </a-text>
+
+      <a-text
+        value="I work for my space, pulling grain from the silo
+      and nectar from the well.
+      Crown grass, a perennial, feet in heavy sod. Harvest is an old world idea,
+      deadwood livestock loping through the field.
+      No more rain or song, woven wire and cupola.
+      I still have all my memories."
+        position="3.026 1.87 -10.60628"
+        color="black"
+        align="left"
+        text="side: double"
+        rotation="0 -90 0"
+        scale="0.5 0.5 0.5"
+      >
+      </a-text>
+
+      <!--FLOOR-->
+
+      <a-plane
+        material="color: #870700"
+        geometry=""
+        rotation="270 0 0"
+        scale="6.4 3.9 1"
+        position="-0.068 0.01 -9.7991"
+      ></a-plane>
+
+      <a-plane
+        material="color: #870700"
+        geometry=""
+        rotation="270 0 0"
+        position="0 0.01 -6.60212"
+        scale="2.45 2.5 1"
+      ></a-plane>
+
+      <!--ROOF-->
+
+      <a-box
+        color="white"
+        position="-0.035 4 -9.80588"
+        material=""
+        geometry=""
+        scale="6.55 4.1 0.1"
+        rotation="90 0 0"
+      ></a-box>
+
+      <a-box
+        color="white"
+        position="0.005 3.049 -6.74901"
+        material=""
+        geometry=""
+        scale="2.65 2 0.1"
+        rotation="90 0 0"
+      ></a-box>
+
+      <!--LIGHT-->
+
+      <a-light
+        type="spot"
+        light="angle: 30; intensity: 0.3"
+        rotation="29.999999999999996 50 0"
+        position="-1.658 0.18989 -7.98775"
+      ></a-light>
+
+      <a-light
+        type="spot"
+        light="angle: 30; intensity: 0.3"
+        rotation="29.999999999999996 -50 0"
+        position="1.268 0.19 -7.87137"
+      ></a-light>
+
+      <a-light
+        type="spot"
+        light="angle: 25; intensity: 0.3"
+        rotation="29.999999999999996 0 0"
+        position="-0.128 0 -9.05304"
+      ></a-light>
 
       <!--SOUND-->
 
