@@ -10,7 +10,7 @@
       <a-entity
         camera
         look-controls
-        wasd-controls="acceleration: 35"
+        wasd-controls="acceleration: 50"
         position="1.5 1.6 3.5"
         twoway-motion="speed: 35"
       ></a-entity>
@@ -102,6 +102,17 @@
         ></a-asset-item>
 
         <a-asset-item id="moon" src="assets/moon.glb"></a-asset-item>
+
+        <a-asset-item id="sod-obj" src="assets/earth_sod.obj"></a-asset-item>
+        <a-asset-item id="sod-mtl" src="assets/earth_sod.mtl"></a-asset-item>
+
+        <a-asset-item id="silo" src="assets/silo.glb"></a-asset-item>
+
+        <a-asset-item id="wheat" src="assets/wheat.glb"></a-asset-item>
+
+        <a-asset-item id="chicken" src="assets/chicken.glb"></a-asset-item>
+
+        <a-asset-item id="hay" src="assets/hay.glb"></a-asset-item>
       </a-assets>
 
       <!-- WALLS -->
@@ -737,6 +748,66 @@ i dag?"
 
       <!--VENUE 3-->
 
+      <!--MODELS-->
+
+      <a-obj-model
+        src="#sod-obj"
+        mtl="#sod-mtl"
+        material=""
+        obj-model=""
+        position="-2.798 -0.4524 -14.06175"
+        scale="0.4 0.6 0.5"
+        rotation=""
+      ></a-obj-model>
+
+      <a-obj-model
+        src="#sod-obj"
+        mtl="#sod-mtl"
+        material=""
+        obj-model=""
+        position="1.264 -0.44277 -12.79956"
+        scale="0.4 0.6 0.46"
+        rotation=""
+      ></a-obj-model>
+
+      <a-entity
+        gltf-model="#hay"
+        scale="0.1 0.1 0.1"
+        visible=""
+        rotation="0 180 0"
+        position="2.359 0 -11.39007"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#silo"
+        visible=""
+        scale="0.1 0.1 0.1"
+        rotation="0 119.99999999999999 0"
+        position="1.827 0.68793 -8.28702"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#wheat"
+        visible=""
+        scale="0.12 0.1 0.1"
+        rotation="0 90 0"
+        position="-2.791 -0.21625 -9.28853"
+      ></a-entity>
+      <a-entity
+        gltf-model="#wheat"
+        visible=""
+        scale="0.12 0.1 0.1"
+        rotation="0 90 0"
+        position="-2.791 -0.21625 -11.02341"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#chicken"
+        scale="0.001 0.001 0.001"
+        rotation="0 190 0"
+        position="1.697 0 -11.11597"
+      ></a-entity>
+
       <!--WALLS-->
 
       <a-box
@@ -810,15 +881,6 @@ i dag?"
         scale="2.5 1 0.1"
       ></a-box>
 
-      <a-box
-        color="white"
-        position="-3.267 1.5 -9.74435"
-        material=""
-        geometry="height: 3"
-        scale="4 1 0.1"
-        rotation="0 90 0"
-      ></a-box>
-
       <!--TEXT-->
 
       <a-text
@@ -881,7 +943,7 @@ i dag?"
       <!--FLOOR-->
 
       <a-plane
-        material="color: #870700"
+        material="color: #350a08"
         geometry=""
         rotation="270 0 0"
         scale="6.4 3.9 1"
@@ -889,10 +951,10 @@ i dag?"
       ></a-plane>
 
       <a-plane
-        material="color: #870700"
+        material="color: #350a08"
         geometry=""
         rotation="270 0 0"
-        position="0 0.01 -6.60212"
+        position="0 0.01 -7"
         scale="2.45 2.5 1"
       ></a-plane>
 
